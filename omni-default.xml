@@ -8,6 +8,11 @@
            fetch="https://github.com/omnirom"
            review="gerrit.omnirom.org" />
 
+  <remote  name="dbas"
+           fetch="https://github.com/darkobas"
+           />
+
+
   <!-- FIRST: Remove unused/forked AOSP Projects -->
   <include name="remove.xml" />
 
@@ -17,7 +22,7 @@
   <!-- OmniROM Projects -->
   <project path="android" name="android" remote="omnirom" revision="android-7.0" />
 
-  <project path="bootable/recovery" name="android_bootable_recovery" remote="omnirom" revision="android-7.0" groups="pdk-cw-fs"/>
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="dbas" revision="n" />
 
   <project path="external/busybox" name="android_external_busybox" remote="omnirom" revision="android-7.0" />
   <project path="external/exfat" name="android_external_exfat" remote="omnirom" revision="android-7.0" />
